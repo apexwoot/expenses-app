@@ -1,10 +1,10 @@
 ## Installation
 
-- Register on https://free.currconv.com/ and paste your KEY in `/src/curApi/app.js` for normal application usage
 - Clone the code from repository
 - Open folder in terminal
 - Run command `npm install` - it will install all dependencies
 - `npm install` is a global command-line utility that you use to create new projects.
+- Register on https://free.currconv.com/ and paste your KEY in `/src/curApi/app.js` for normal application usage
 
 ## Available Scripts
 
