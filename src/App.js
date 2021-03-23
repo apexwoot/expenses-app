@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Head from './Components/Head/Head';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { BrowserRouter } from 'react-router-dom';
+import BodyContainer from './Components/Body/BodyContainer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+const App = () => {
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+
+  const theme = React.useMemo(
+    () =>
+      createMuiTheme({
+        palette: {
+          type: prefersDarkMode ? 'dark' : 'light'
+        }
+      }),
+    [prefersDarkMode]
   );
-}
+  
+  return (
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <CssBaseline />
+        <Head />
+        <BodyContainer />
+      </BrowserRouter>
+    </ThemeProvider>
+  );
+};
 
 export default App;
