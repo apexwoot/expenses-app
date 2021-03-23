@@ -1,7 +1,5 @@
 ## Installation
 
-> > > > > > > 11dfb09cfb8a3914dbb762d1991d6de8441a3be9
-
 - Clone the code from repository
 - Open folder in terminal
 - Run command `npm install` - it will install all dependencies
