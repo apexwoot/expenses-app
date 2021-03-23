@@ -1,5 +1,5 @@
 const axios = require('axios').default;
-const KEY = '61391ee84c2f49e189d5';
+const KEY = ''; // your API key
 
 export const getRateData = async (origalCurrency = 'USD', desiredCurrency = 'USD') => {
   try {
