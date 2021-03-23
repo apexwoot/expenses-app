@@ -1,4 +1,4 @@
-<!-- Installation -->
+<h1 allign="center">Installation<h1>
 
 Clone the code from repository
 Open folder in terminal
