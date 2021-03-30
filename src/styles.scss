@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.app-wrapper {
+  margin: 0;
+}
+
+.navBar {
+  display: flex;
+  background: #555555;
+  justify-content: space-evenly;
+}
+
+.body-container {
+  display: flex;
+  justify-content: center;
+  margin: 5em auto;
+  padding: 2em;
+  background: #f9f9f9;
+  border: none;
+  border-radius: 0.45em;
+  max-width: 450px;
+
+  label {
+    display: inline-block;
+    width: 6em;
+    font-size: 0.95em;
+  }
+
+  input {
+    background: #f9f9f9;
+    margin-bottom: 2rem;
+    margin-left: 1em;
+    border: none;
+    border-bottom: 2px solid #555555;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    display: block;
+    margin: 0 auto;
+    background: lightgrey;
+    padding: 1em;
+    border: 0;
+    border-radius: 0.25em;
+  }
+}
+
+button.nav-button {
+  background-color: #555555; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-inline: 10px;
+
+  &:focus {
+    outline: none;
+    font-weight: bold;
+    color: lightcoral;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 10px 20px;
+}
