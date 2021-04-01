@@ -1,8 +1,5 @@
 import { connect } from 'react-redux';
-import {
-  calcTotalInDesiredCurrencyThunk,
-  currencyInputOnChange,
-} from '../../../../redux/expenses-reducer';
+import { calcTotalInDesiredCurrencyThunk, currencyInputOnChange } from '../../../../redux/expenses-reducer';
 import TotalSpent from './TotalSpent';
 
 const mapStateToProps = state => ({

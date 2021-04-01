@@ -1,15 +1,15 @@
 import React from 'react';
-import Head from './Components/Head/Head';
 import { BrowserRouter } from 'react-router-dom';
-import BodyContainer from './Components/Body/BodyContainer';
+import Body from './Components/Body/Body';
+import HeadContainer from './Components/Head/HeadContainer';
 import './styles.scss';
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className='app-wrapper'>
-        <Head />
-        <BodyContainer />
+        <HeadContainer />
+        <Body />
       </div>
     </BrowserRouter>
   );
